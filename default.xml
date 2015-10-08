@@ -46,7 +46,6 @@
   <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="par" revision="lollipop_bacon"/>
   <project groups="pdk" name="android_hardware_ril" path="hardware/ril" remote="par" revision="lollipop_bacon"/>
   <project name="CyanogenMod/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="cm-12.1"/>
-  <project name="CyanogenMod/android_external_libnfc-nci" path="external/libnfc-nci" remote="github" revision="cm-12.1"/>
   <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="par" revision="lollipop_msm8974"/>
   <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="par" revision="lollipop_msm8974" />
   <project groups="qcom,default" name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="par" revision="lollipop_msm8974"/>
