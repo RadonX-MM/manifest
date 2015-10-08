@@ -16,6 +16,8 @@
            fetch="https://github.com/TheMuppets/" />
   <remote  name="rnx"
            fetch="https://github.com/RadonX-ROM/" />
+  <remote  name="rmm"
+           fetch="https://github.com/RadonX-MM/" />
   <remote  name="gh"
            fetch="https://github.com/" />
   <remote  name="bb"
@@ -73,7 +75,7 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="hyper-toolchains/arm-linux-androideabi-4.9-sm" remote="gh" revision="master" groups="pdk,linux,arm" />
   
   <!-- Core Projects -->
-  <project path="manifest" name="paradox_manifest" remote="rnx" revision="lollipop_bacon"/>
+  <project path="manifest" name="manifest" remote="rmm" revision="mm"/>
   <project groups="pdk-cw-fs" name="teamhorizon/platform_frameworks_webview" remote="gh" revision="lp-mr1" path="frameworks/webview"/>
 <!-- End Changes -->
 
