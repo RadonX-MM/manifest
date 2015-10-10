@@ -25,8 +25,8 @@
            fetch="https://gitlab.com/" />
   <remote  name="th"
 	         fetch="https://github.com/TeamHorizon/" />
-  <default remote="aosp"
-           revision="refs/tags/android-6.0.0_r1"
+  <default remote="caf"
+           revision="LA.BR.1.2.6_rb1.1"
            sync-j="4" 
            sync-c="true"
            sync-f="true"
