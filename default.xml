@@ -29,8 +29,7 @@
            revision="LA.BR.1.2.6_rb1.1"
            sync-j="4" 
            sync-c="true"
-           sync-f="true"
-           sync--force-sync="true" />
+           sync-f="true" />
 
 <!-- RadonX Changes -->
   <!-- Device Dependencies -->
