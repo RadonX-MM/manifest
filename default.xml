@@ -38,7 +38,7 @@
   <project name="android_device_qcom_common" path="device/qcom/common" remote="par" revision="marshmallow_bacon">
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
-  <project groups="device" name="paradox_device_oneplus_bacon" path="device/oneplus/bacon" remote="rmm" revision="mm"/>
+  <project groups="device" name="device_oneplus_bacon" path="device/oneplus/bacon" remote="rmm" revision="mm"/>
   <project groups="device" name="paradox_kernel_oneplus_msm8974" path="kernel/" remote="rnx" revision="lp-mr1"/>
   <project groups="device" name="proprietary_vendor_oneplus" path="vendor/oneplus/bacon" remote="par" revision="marshmallow_bacon"/>
   <project groups="qcom,default" name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="par" revision="marshmallow_bacon"/>
