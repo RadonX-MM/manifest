@@ -28,8 +28,7 @@
   <default remote="caf"
            revision="LA.BR.1.2.6_rb1.1"
            sync-j="4" 
-           sync-c="true"
-           sync-f="true" />
+           sync-c="true"/>
 
 <!-- RadonX Changes -->
   <!-- Device Dependencies -->
