@@ -78,7 +78,7 @@
   <project path="vendor/rnx" name="vendor_rnx" remote="rmm" revision="mm"/>
   <project path="vendor/snapdragon" name="vendor_snapdragon" remote="rnx" revision="lp-mr1" />
   <project path="vendor/sm" name="SaberMod/android-vendor-sabermod.git" remote="gl" revision="master" />
-  <project name="platform/vendor/qcom-opensource/display-frameworks" path="vendor/qcom/opensource/display-frameworks" remote="caf"/>
+  <project name="platform/vendor/qcom-opensource/display-frameworks" path="vendor/qcom/opensource/display-frameworks" remote="caf" revision="LA.BR.1.2.6_rb1.1"/>
   <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" remote="caf"/>
   <project name="platform/vendor/qcom-opensource/fm" path="vendor/qcom/opensource/fm" remote="caf"/>
   <project name="platform/vendor/qcom-opensource/kernel/kernel-tests" path="vendor/qcom/opensource/kernel-tests" revision="LA.BF.1.1.1.c4" remote="caf"/>
