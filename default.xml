@@ -25,8 +25,7 @@
            fetch="https://gitlab.com/" />
   <remote  name="th"
 	         fetch="https://github.com/TeamHorizon/" />
-  <default remote="caf"
-           revision="LA.BR.1.2.6_rb1.1"
+  <default remote="aosp"
            sync-j="4" 
            sync-c="true"/>
 
