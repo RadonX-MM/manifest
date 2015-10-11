@@ -72,7 +72,7 @@
   
   <!-- Core Projects -->
   <project path="manifest" name="manifest" remote="rmm" revision="mm"/>
-  <project groups="pdk-cw-fs" name="teamhorizon/platform_frameworks_webview" remote="gh" revision="lp-mr1" path="frameworks/webview"/>
+  <project groups="pdk-cw-fs" name="teamhorizon/platform_frameworks_webview" remote="gh" revision="mm" path="frameworks/webview"/>
   
   <!-- Vendor -->
   <project path="vendor/rnx" name="vendor_rnx" remote="rmm" revision="mm"/>
@@ -97,6 +97,10 @@
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="development" name="platform/development" groups="pdk-cw-fs,pdk-fs" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
+  <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
+  <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
+  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
+  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/android-mock" name="platform/external/android-mock" groups="pdk-cw-fs,pdk-fs" />
@@ -347,7 +351,6 @@
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
-  <project path="hardware/qcom/power" name="platform/hardware/qcom/power" remote="aosp" groups="qcom" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
