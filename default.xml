@@ -10,7 +10,8 @@
   <remote  name="github"
            fetch="git://github.com/" />
   <remote  name="caf"
-           fetch="git://codeaurora.org/" />
+           fetch="git://codeaurora.org/"
+           revision="LA.BF.1.1.1.c4" />
   <remote  name="tm"
            fetch="https://github.com/TheMuppets/" />
   <remote  name="rnx"
