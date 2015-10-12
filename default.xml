@@ -11,7 +11,7 @@
            fetch="git://github.com/" />
   <remote  name="caf"
            fetch="git://codeaurora.org/"
-           revision="LA.BF.1.1.1.c4" />
+           revision="LA.BF.1.1.3-00110-8x74.0" />
   <remote  name="tm"
            fetch="https://github.com/TheMuppets/" />
   <remote  name="rnx"
@@ -26,9 +26,11 @@
            fetch="https://gitlab.com/" />
   <remote  name="th"
 	         fetch="https://github.com/TeamHorizon/" />
-  <default remote="aosp"
+  <default remote="caf"
            sync-j="4" 
-           sync-c="true"/>
+           sync-c="true"
+           sync-f="true"
+           sync--force-sync="true"/>
 
 <!-- RadonX Changes -->
   <!-- Device Dependencies -->
@@ -39,14 +41,14 @@
   <project groups="device" name="device_oneplus_bacon" path="device/oneplus/bacon" remote="rmm" revision="mm"/>
   <project groups="device" name="paradox_kernel_oneplus_msm8974" path="kernel/" remote="rnx" revision="lp-mr1"/>
   <project groups="device" name="proprietary_vendor_oneplus" path="vendor/oneplus/bacon" remote="par" revision="marshmallow_bacon"/>
-  <project groups="qcom,default" name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="par" revision="marshmallow_bacon"/>
-  <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="par" revision="marshmallow_bacon"/>
+  <project groups="qcom,default" name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="caf"/>
+  <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="caf"/>
   <project groups="pdk" name="android_hardware_ril" path="hardware/ril" remote="par" revision="marshmallow_bacon"/>
   <project name="CyanogenMod/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="cm-12.1"/>
-  <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="par" revision="marshmallow_legacy"/>
-  <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="par" revision="marshmallow_legacy" />
+  <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="caf"/>
+  <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="caf" />
   <project groups="qcom,default" name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="par" revision="marshmallow_legacy"/>
-  <project groups="qcom,default" name="android_hardware_qcom_display" path="hardware/qcom/display" remote="par" revision="marshmallow_legacy"/>
+  <project groups="qcom,default" name="android_hardware_qcom_display" path="hardware/qcom/display" remote="caf"/>
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="par" revision="marshmallow_legacy"/>
   
   <!-- External Libraries -->
@@ -55,7 +57,6 @@
   <project path="external/android-visualizer" name="SlimRoms/android_external_android-visualizer" remote="github" revision="lp5.1" />
 
   <!-- Apps -->
-  <project name="android_packages_apps_Mms" path="packages/apps/Mms" remote="par" revision="marshmallow_legacy" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="par" revision="marshmallow_legacy" />
   <project name="SlimRoms/packages_apps_SlimLauncher" path="packages/apps/SlimLauncher" remote="github" revision="lp5.1" />
   <project name="SlimRoms/packages_apps_Gallery2" path="packages/apps/Gallery2" remote="github" revision="lp5.1" />
