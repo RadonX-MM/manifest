@@ -11,7 +11,7 @@
            fetch="git://github.com/" />
   <remote  name="caf"
            fetch="git://codeaurora.org/"
-           revision="LA.BF.1.1.3-00110-8x74.0" />
+           revision="LA.BF.1.1.3_rb1.4" />
   <remote  name="tm"
            fetch="https://github.com/TheMuppets/" />
   <remote  name="rnx"
@@ -31,38 +31,6 @@
            sync-c="true"
            sync-f="true"
            sync--force-sync="true"/>
-
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <remote  name="par"
-            fetch="git://github.com/aosparadox/"
-            sync-c="true"
-            sync-j="4"
-            revision="marshmallow_msm8974" />
-
-  <remote  name="aosparadox"
-           fetch="ssh://git@github.com/aosparadox/"
-           sync-c="true" />
-
-  <remote  name="aosp"
-           fetch="https://android.googlesource.com"
-           sync-c="true"
-           review="android-review.googlesource.com" />
-
-  <remote  name="sm"
-           fetch="https://github.com/SaberMod/" />
-
-  <remote  name="github"
-          fetch="git://github.com/"
-          sync-c="true"
-          sync-j="4" />
-
-  <remote  name="caf"
-           sync-c="true"
-	   fetch="git://codeaurora.org/" 
-	   review="codeaurora.org"/>
-
-  <default remote="caf" revision="LA.BF.1.1.3_rb1.4"/>
  
  <!-- AOSParadox Stuff -->
 <!-- Bacon -->
