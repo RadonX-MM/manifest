@@ -44,7 +44,7 @@
   <project groups="device" name="android_device_oneplus_bacon" path="device/oneplus/bacon" remote="par" revision="marshmallow_bacon"/>
   <project groups="device" name="android_kernel_oneplus_msm8974" path="kernel/" remote="par" revision="marshmallow_bacon"/>
   <project groups="device" name="proprietary_vendor_oneplus" path="vendor/oneplus/bacon" remote="par" revision="marshmallow_bacon"/>
-  <project name="prima" path="vendor/qcom/opensource/wlan/prima" remote="par" revision="marshmallow_bacon"/>
+  <project name="prima" path="vendor/qcom/opensource/wlan/prima" remote="rmm" revision="marshmallow_bacon"/>
   <project path="frameworks/base" name="android_frameworks_base" remote="par" revision="marshmallow_bacon" groups="pdk-cw-fs" />
   <project groups="pdk" name="android_external_sepolicy" path="external/sepolicy" remote="par" revision="marshmallow_bacon"/>
   <project groups="pdk" name="android_external_libnfc-nci" path="external/libnfc-nci" remote="par" revision="marshmallow_bacon"/>
