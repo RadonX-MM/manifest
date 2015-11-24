@@ -53,6 +53,7 @@
   <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="par" revision="marshmallow_bacon"/>
   <project groups="pdk" name="android_hardware_ril" path="hardware/ril" remote="par" revision="marshmallow_bacon"/>
   <project path="manifest" name="local_aosparadox" remote="par" revision="marshmallow_bacon"/>
+  <project groups="pdk-java" name="benzorom/external_proguard" path="external/proguard" remote="github" revision="marshmallow"/>
 
 <!-- CyanogenMod Bacon Dependencies (we can't pass them) -->
   <project name="CyanogenMod/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="cm-13.0"/>
@@ -261,7 +262,6 @@
   <project groups="pdk" name="platform/external/pcre" path="external/pcre"/>
   <project groups="pdk-cw-fs" name="platform/external/pdfium" path="external/pdfium"/>
   <project groups="pdk-cw-fs" name="platform/external/ppp" path="external/ppp"/>
-  <project groups="pdk-java" name="platform/external/proguard" path="external/proguard"/>
   <project groups="pdk" name="platform/external/protobuf" path="external/protobuf"/>
   <project groups="pdk-cw-fs" name="platform/external/regex-re2" path="external/regex-re2"/>
   <project groups="pdk-cw-fs" name="platform/external/replicaisland" path="external/replicaisland"/>
