@@ -58,7 +58,7 @@
   <project name="CyanogenMod/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="cm-13.0"/>
 
 <!-- QCOM MSM8974 -->
-  <project path="build" name="android_build" remote="par" revision="marshmallow_msm8974" groups="pdk,tradefed" >
+  <project path="build" name="android_build" remote="rmm" revision="mm" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="par" revision="marshmallow_msm8974"/>
