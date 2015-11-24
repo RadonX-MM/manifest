@@ -428,8 +428,9 @@
   <project groups="pdk,linux" name="prebuilts_clang_linux-x86_host_3.7" path="prebuilts/clang/linux-x86/host/3.7" remote="rmm" revision="master"/>
   <project name="platform/prebuilts/devtools" path="prebuilts/devtools"/>
   <project groups="pdk" name="platform/prebuilts/eclipse" path="prebuilts/eclipse"/>
-  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"/>
-  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"/>
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="hyper-toolchains/arm-eabi-4.9-google" remote="gh" revision="master" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="xanaxdroid/arm-eabi-5.2.git" remote="bb" revision="sabermod" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="hyper-toolchains/arm-linux-androideabi-4.9-sm" remote="gh" revision="master" groups="pdk,linux,arm" />
   <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8"/>
   <project groups="pdk-cw-fs" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin"/>
   <project groups="pdk-cw-fs" name="platform/prebuilts/libs/libedit" path="prebuilts/libs/libedit"/>
