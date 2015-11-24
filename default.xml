@@ -425,6 +425,7 @@
   <project name="platform/platform_testing" path="platform_testing"/>
   <project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator"/>
   <project groups="pdk,linux" name="platform/prebuilts/clang/linux-x86/host/3.6" path="prebuilts/clang/linux-x86/host/3.6"/>
+  <project groups="pdk,linux" name="prebuilts_clang_linux-x86_host_3.7" path="prebuilts/clang/linux-x86/host/3.7" remote="rmm" revision="master"/>
   <project name="platform/prebuilts/devtools" path="prebuilts/devtools"/>
   <project groups="pdk" name="platform/prebuilts/eclipse" path="prebuilts/eclipse"/>
   <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"/>
