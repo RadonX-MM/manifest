@@ -54,6 +54,7 @@
   <project groups="pdk" name="android_hardware_ril" path="hardware/ril" remote="par" revision="marshmallow_bacon"/>
   <project path="manifest" name="local_aosparadox" remote="par" revision="marshmallow_bacon"/>
   <project groups="pdk-java" name="benzorom/external_proguard" path="external/proguard" remote="github" revision="marshmallow"/>
+  <project groups="pdk" name="UBERMALLOW/external_chromium-webview" path="external/chromium-webview" remote="github" revision="master"/>
 
 <!-- CyanogenMod Bacon Dependencies (we can't pass them) -->
   <project name="CyanogenMod/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="cm-13.0"/>
@@ -78,7 +79,7 @@
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" />
 
 <!-- AOSParadox Vendor -->
-
+  <project path="vendor/sm" name="SaberMod/android-vendor-sabermod.git" remote="gl" revision="master" />
   <project path="vendor/aosparadox" name="android_vendor_aosparadox" remote="par" revision="marshmallow"/>
 <!-- END AOSParadox Stuff -->
  
@@ -118,7 +119,6 @@
   <project groups="pdk-cw-fs" name="platform/external/ceres-solver" path="external/ceres-solver"/>
   <project name="platform/external/chromium-libpac" path="external/chromium-libpac"/>
   <project groups="pdk" name="platform/external/chromium-trace" path="external/chromium-trace"/>
-  <project groups="pdk" name="platform/external/chromium-webview" path="external/chromium-webview"/>
   <project groups="pdk" name="platform/external/clang" path="external/clang"/>
   <project name="platform/external/cmockery" path="external/cmockery"/>
   <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt"/>
