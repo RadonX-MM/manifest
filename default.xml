@@ -32,7 +32,7 @@
            sync-f="true"
            sync--force-sync="true"/>
  
- <!-- AOSParadox Stuff -->
+ <!-- RadonX Stuff -->
 <!-- Bacon -->
 
   <project name="android_device_qcom_msm8974" path="device/qcom/msm8974" remote="par" revision="marshmallow_bacon"/>
@@ -79,10 +79,10 @@
 
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" />
 
-<!-- AOSParadox Vendor -->
+<!-- RadonX Vendor -->
   <project path="vendor/sm" name="SaberMod/android-vendor-sabermod.git" remote="gl" revision="master" />
-  <project path="vendor/aosparadox" name="android_vendor_aosparadox" remote="par" revision="marshmallow"/>
-<!-- END AOSParadox Stuff -->
+  <project path="vendor/rnx" name="vendor_rnx" remote="rmm" revision="mm"/>
+<!-- END RadonX Stuff -->
  
   <project groups="pdk-cw-fs" name="device/common"/>
   <project groups="pdk" name="device/generic/armv7-a-neon"/>
