@@ -13,6 +13,7 @@ Syncing
 Set up your Linux machine to build Android and install repo.
 
  $ repo init -u https://github.com/RadonX-MM/manifest -b mm-testing
+ 
  $ repo sync -j16
  
 Building
@@ -20,5 +21,7 @@ Building
 Build using the following commands
   
   $ . build/envsetup.sh
+  
   $ lunch 7
+  
   $ make otapackage -j(Number of Cores +2)
