@@ -55,6 +55,8 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="par" revision="marshmallow_msm8974" />
+  <project groups="pdk" name="bionic" path="bionic" remote="rmm" revision="mm"/>
+  <project groups="pdk" name="platform/system/extras" path="system/extras" remote="rmm" revision="mm"/>
 
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rmm" revision="mm" />
@@ -87,7 +89,6 @@
   <project name="device/generic/qemu"/>
   <project name="kernel/lk" path="bootable/bootloader/lk"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp"/>
-  <project groups="pdk" name="platform/bionic" path="bionic"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery"/>
   <project groups="cts,pdk-cw-fs" name="platform/cts" path="cts"/>
   <project groups="pdk-cw-fs" name="platform/dalvik" path="dalvik"/>
@@ -438,7 +439,6 @@
   <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools"/>
   <project groups="pdk-cw-fs" name="platform/sdk" path="sdk"/>
   <project groups="pdk" name="platform/system/bt" path="system/bt"/>
-  <project groups="pdk" name="platform/system/extras" path="system/extras"/>
   <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper"/>
   <project groups="pdk" name="platform/system/keymaster" path="system/keymaster"/>
   <project groups="pdk" name="platform/system/media" path="system/media"/>
