@@ -380,7 +380,6 @@
   <project name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon"/>
   <project name="platform/packages/apps/Protips" path="packages/apps/Protips"/>
   <project name="platform/packages/apps/Provision" path="packages/apps/Provision"/>
-  <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox"/>
   <project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService"/>
   <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera"/>
   <project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder"/>
@@ -411,12 +410,7 @@
   <project name="platform/packages/services/Telecomm" path="packages/services/Telecomm"/>
   <project name="platform/packages/services/Telephony" path="packages/services/Telephony"/>
   <project name="platform/packages/wallpapers/Basic" path="packages/wallpapers/Basic"/>
-  <project name="platform/packages/wallpapers/Galaxy4" path="packages/wallpapers/Galaxy4"/>
-  <project name="platform/packages/wallpapers/HoloSpiral" path="packages/wallpapers/HoloSpiral"/>
   <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker"/>
-  <project name="platform/packages/wallpapers/MagicSmoke" path="packages/wallpapers/MagicSmoke"/>
-  <project name="platform/packages/wallpapers/NoiseField" path="packages/wallpapers/NoiseField"/>
-  <project name="platform/packages/wallpapers/PhaseBeam" path="packages/wallpapers/PhaseBeam"/>
   <project groups="pdk" name="platform/pdk" path="pdk"/>
   <project name="platform/platform_testing" path="platform_testing"/>
   <project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator"/>
