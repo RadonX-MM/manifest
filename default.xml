@@ -47,11 +47,11 @@
   <project path="frameworks/base" name="frameworks_base" remote="rmm" revision="mm" groups="pdk-cw-fs" />
   <project groups="pdk" name="android_external_sepolicy" path="external/sepolicy" remote="par" revision="marshmallow_bacon"/>
   <project groups="pdk" name="android_external_libnfc-nci" path="external/libnfc-nci" remote="par" revision="marshmallow_bacon"/>
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="par" revision="marshmallow_bacon" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rmm" revision="mm" />
   <project groups="qcom,default" name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="par" revision="marshmallow_bacon"/>
   <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="par" revision="marshmallow_bacon"/>
   <project groups="pdk" name="android_hardware_ril" path="hardware/ril" remote="par" revision="marshmallow_bacon"/>
-  <project path="manifest" name="local_aosparadox" remote="par" revision="marshmallow_bacon"/>
+  <project path="manifest" name="manifest" remote="rmm" revision="mm-testing"/>
   <project groups="pdk-java" name="benzorom/external_proguard" path="external/proguard" remote="github" revision="marshmallow"/>
   <project groups="pdk" name="UBERMALLOW/external_chromium-webview" path="external/chromium-webview" remote="github" revision="master"/>
   <project groups="pdk" name="art" path="art" remote="rmm" revision="mm"/>
