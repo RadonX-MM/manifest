@@ -41,8 +41,8 @@
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
   <project groups="pdk" path="frameworks/av" name="android_frameworks_av" remote="par" revision="marshmallow_bacon"/>
-  <project groups="device" name="android_device_oneplus_bacon" path="device/oneplus/bacon" remote="par" revision="marshmallow_bacon"/>
-  <project groups="device" name="android_kernel_oneplus_msm8974" path="kernel/" remote="par" revision="marshmallow_bacon"/>
+  <project groups="device" name="device_oneplus_bacon" path="device/oneplus/bacon" remote="rmm" revision="mm"/>
+  <project groups="device" name="kernel" path="kernel/" remote="rmm" revision="mm"/>
   <project groups="device" name="proprietary_vendor_oneplus" path="vendor/oneplus/bacon" remote="par" revision="marshmallow_bacon"/>
   <project name="prima" path="vendor/qcom/opensource/wlan/prima" remote="rmm" revision="marshmallow_bacon"/>
   <project path="frameworks/base" name="frameworks_base" remote="rmm" revision="mm" groups="pdk-cw-fs" />
@@ -55,6 +55,7 @@
   <project path="manifest" name="local_aosparadox" remote="par" revision="marshmallow_bacon"/>
   <project groups="pdk-java" name="benzorom/external_proguard" path="external/proguard" remote="github" revision="marshmallow"/>
   <project groups="pdk" name="UBERMALLOW/external_chromium-webview" path="external/chromium-webview" remote="github" revision="master"/>
+  <project groups="pdk" name="art" path="art" remote="rmm" revision="mm"/>
 
 <!-- CyanogenMod Bacon Dependencies (we can't pass them) -->
   <project name="CyanogenMod/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="cm-13.0"/>
@@ -90,7 +91,6 @@
   <project name="device/generic/qemu"/>
   <project name="kernel/lk" path="bootable/bootloader/lk"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp"/>
-  <project groups="pdk" name="platform/art" path="art"/>
   <project groups="pdk" name="platform/bionic" path="bionic"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery"/>
   <project groups="cts,pdk-cw-fs" name="platform/cts" path="cts"/>
