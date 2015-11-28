@@ -56,7 +56,7 @@
   </project>
   <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="par" revision="marshmallow_msm8974" />
   <project groups="pdk" name="bionic" path="bionic" remote="rmm" revision="mm"/>
-  <project groups="pdk" name="platform/system/extras" path="system/extras" remote="rmm" revision="mm"/>
+  <project groups="pdk" name="system_extras" path="system/extras" remote="rmm" revision="mm"/>
 
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rmm" revision="mm" />
