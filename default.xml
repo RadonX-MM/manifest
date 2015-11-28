@@ -57,6 +57,8 @@
   <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="par" revision="marshmallow_msm8974" />
   <project groups="pdk" name="bionic" path="bionic" remote="rmm" revision="mm"/>
   <project groups="pdk" name="system_extras" path="system/extras" remote="rmm" revision="mm"/>
+  <project groups="pdk-cw-fs" name="dalvik" path="dalvik" remote="rmm" revision="mm"/>
+  <project groups="pdk" name="libcore" path="libcore" remote="rmm" revision="mm"/>
 
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rmm" revision="mm" />
@@ -94,7 +96,6 @@
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery"/>
   <project groups="cts,pdk-cw-fs" name="platform/cts" path="cts"/>
-  <project groups="pdk-cw-fs" name="platform/dalvik" path="dalvik"/>
   <project groups="pdk-cw-fs" name="platform/development" path="development"/>
   <project groups="pdk-cw-fs" name="platform/docs/source.android.com" path="docs/source.android.com"/>
   <project groups="pdk" name="platform/external/aac" path="external/aac"/>
@@ -344,7 +345,6 @@
   <project groups="qcom" name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster"/>
   <project groups="qcom,default" name="platform/hardware/qcom/media" path="hardware/qcom/media"/>
   <project groups="qcom,default" name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors"/>
-  <project groups="pdk" name="platform/libcore" path="libcore"/>
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper"/>
   <project groups="pdk" name="platform/ndk" path="ndk"/>
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver"/>
