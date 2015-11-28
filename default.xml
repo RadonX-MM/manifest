@@ -69,6 +69,7 @@
   <project path="packages/apps/SlimLauncher" name="SlimRoms/packages_apps_SlimLauncher" remote="gh" revision="mm6.0" />
   <project path="packages/apps/Gallery2" name="CyanogenMod/android_packages_apps_Gallery2" remote="gh" revision="cm-13.0" />
   <project path="packages/apps/SlimFileManager" name="SlimRoms/packages_apps_SlimFileManager" remote="gh" revision="mm6.0" />
+  <project path="packages/apps/SnapdragonAudio+" name="packages_apps_SnapdragonAudio" remote="rmm" revision="mm" />
 
   <!-- External -->
   <project groups="pdk" name="android_external_sepolicy" path="external/sepolicy" remote="par" revision="marshmallow_bacon"/>
@@ -367,7 +368,6 @@
   <project name="platform/packages/apps/Messaging" path="packages/apps/Messaging"/>
   <project name="platform/packages/apps/Mms" path="packages/apps/Mms"/>
   <project name="platform/packages/apps/Music" path="packages/apps/Music"/>
-  <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX"/>
   <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc"/>
   <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer"/>
   <project name="platform/packages/apps/Phone" path="packages/apps/Phone"/>
