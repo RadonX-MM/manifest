@@ -59,6 +59,7 @@
   <project groups="pdk" name="system_extras" path="system/extras" remote="rmm" revision="mm"/>
   <project groups="pdk-cw-fs" name="dalvik" path="dalvik" remote="rmm" revision="mm"/>
   <project groups="pdk" name="libcore" path="libcore" remote="rmm" revision="mm"/>
+  <project groups="pdk" name="frameworks_native" path="frameworks/native" remote="rmm" revision="mm"/>
 
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rmm" revision="mm" />
@@ -315,7 +316,6 @@
   <project groups="pdk-cw-fs" name="platform/frameworks/minikin" path="frameworks/minikin"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/ml" path="frameworks/ml"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/multidex" path="frameworks/multidex"/>
-  <project groups="pdk" name="platform/frameworks/native" path="frameworks/native"/>
   <project name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/bluetooth" path="frameworks/opt/bluetooth"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar"/>
