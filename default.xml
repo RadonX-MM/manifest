@@ -72,7 +72,7 @@
   <project path="packages/apps/SnapdragonAudio+" name="packages_apps_SnapdragonAudio" remote="rmm" revision="mm" />
 
   <!-- External -->
-  <project groups="pdk" name="android_external_sepolicy" path="external/sepolicy" remote="par" revision="marshmallow_bacon"/>
+  <project groups="pdk" name="external_sepolicy" path="external/sepolicy" remote="rmm" revision="mm"/>
   <project groups="pdk" name="android_external_libnfc-nci" path="external/libnfc-nci" remote="par" revision="marshmallow_bacon"/>
   <project groups="pdk-java" name="benzorom/external_proguard" path="external/proguard" remote="github" revision="marshmallow"/>
   <project groups="pdk" name="UBERMALLOW/external_chromium-webview" path="external/chromium-webview" remote="github" revision="master"/>
