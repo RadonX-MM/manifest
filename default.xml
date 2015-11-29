@@ -38,7 +38,7 @@
   </project>
   <project groups="device" name="device_oneplus_bacon" path="device/oneplus/bacon" remote="rmm" revision="mm"/>
   <project groups="device" name="kernel" path="kernel/" remote="rmm" revision="mm"/>
-  <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="par" revision="marshmallow_msm8974"/>
+  <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="rmm" revision="mm"/>
   <project groups="qcom,default" name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="par" revision="marshmallow_bacon"/>
   <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="par" revision="marshmallow_bacon"/>
   <project groups="pdk" name="android_hardware_ril" path="hardware/ril" remote="par" revision="marshmallow_bacon"/>
