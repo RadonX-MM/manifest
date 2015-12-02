@@ -87,19 +87,6 @@
   <project path="vendor/rnx" name="vendor_rnx" remote="rmm" revision="mm"/>
 <!-- END RadonX Stuff -->
  
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-<remote  name="aosp"
-           fetch="https://android.googlesource.com/" />
-
-  <remote  name="github"
-           fetch="git://github.com/"
-           review="https://review.slimroms.org/"/>
-
-  <default revision="refs/tags/android-6.0.0_r5"
-           remote="aosp"
-           sync-j="4" />
-
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="bootable/recovery" name="SlimRoms/bootable_recovery" remote="github" revision="mm6.0" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
