@@ -440,18 +440,13 @@
   <project path="system/netd" name="SlimRoms/android_system_netd" remote="github" revision="mm6.0" />
   <project path="system/security" name="SlimRoms/android_system_security" remote="github" revision="mm6.0" />
   <project path="system/vold" name="SlimRoms/android_system_vold" remote="github" revision="mm6.0" />
-  <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" />
-  <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
-
+  
   <!-- New Additions for slim -->
   <project path="vendor/slim" name="SlimRoms/vendor_slim" remote="github" revision="mm6.0" />
 
   <!--Power Hal -->
   <project path="hardware/cm" name="SlimRoms/hardware_cm" remote="github" revision="mm6.0" />
-
-  <!-- SamsungServiceMode -->
-  <project path="packages/apps/SamsungServiceMode" name="SlimRoms/packages_apps_SamsungServiceMode" remote="github" revision="mm6.0" />
-
+  
   <!-- qrngd -->
   <project path="external/qrngd" name="SlimRoms/android_external_qrngd" remote="github" revision="mm6.0" />
 
