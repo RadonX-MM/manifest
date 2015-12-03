@@ -43,6 +43,7 @@
   <project groups="pdk" name="android_hardware_ril" path="hardware/ril" remote="par" revision="marshmallow_bacon"/>
   <project groups="qcom,default" name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="par" revision="marshmallow_msm8974"/>
   <project groups="qcom,default" name="android_hardware_qcom_display" path="hardware/qcom/display" remote="par" revision="marshmallow_msm8974"/>
+  <project path="hardware/cm" name="SlimRoms/hardware_cm" remote="github" revision="mm6.0" />
   
   <!-- Core Projects -->
   <project groups="pdk" path="frameworks/av" name="android_frameworks_av" remote="par" revision="marshmallow_bacon"/>
@@ -77,6 +78,9 @@
   <project groups="pdk-java" name="benzorom/external_proguard" path="external/proguard" remote="github" revision="marshmallow"/>
   <project groups="pdk" name="UBERMALLOW/external_chromium-webview" path="external/chromium-webview" remote="github" revision="master"/>
   <project groups="pdk" name="android_external_boringssl" path="external/boringssl" remote="par" revision="marshmallow_msm8974"/>
+  <project path="external/qrngd" name="SlimRoms/android_external_qrngd" remote="github" revision="mm6.0" />
+  <project path="external/ffmpeg" name="SlimRoms/android_external_ffmpeg" remote="github" revision="mm6.0" />
+  <project path="external/stagefright-plugins" name="SlimRoms/android_external_stagefright-plugins" remote="github" revision="mm6.0" />
   
   <!-- Vendors -->
   <project groups="device" name="proprietary_vendor_oneplus" path="vendor/oneplus/bacon" remote="par" revision="marshmallow_bacon"/>
@@ -84,6 +88,12 @@
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="par" revision="marshmallow_msm8974"/>
   <project path="vendor/sm" name="SaberMod/android-vendor-sabermod.git" remote="gl" revision="master" />
   <project path="vendor/rnx" name="vendor_rnx" remote="rmm" revision="mm"/>
+  
+  <!-- Toolchains -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="hyper-toolchains/arm-eabi-4.9-google" remote="gh" revision="master" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="xanaxdroid/arm-eabi-5.2.git" remote="bb" revision="sabermod" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="hyper-toolchains/arm-linux-androideabi-4.9-sm" remote="gh" revision="master" groups="pdk,linux,arm" />
+  <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8"/>
 <!-- END RadonX Stuff -->
  
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -437,24 +447,8 @@
   <project path="system/netd" name="SlimRoms/android_system_netd" remote="github" revision="mm6.0" />
   <project path="system/security" name="SlimRoms/android_system_security" remote="github" revision="mm6.0" />
   <project path="system/vold" name="SlimRoms/android_system_vold" remote="github" revision="mm6.0" />
-  
-  <!-- New Additions for slim -->
-  <project path="vendor/slim" name="SlimRoms/vendor_slim" remote="github" revision="mm6.0" />
 
-  <!--Power Hal -->
-  <project path="hardware/cm" name="SlimRoms/hardware_cm" remote="github" revision="mm6.0" />
-  
-  <!-- qrngd -->
-  <project path="external/qrngd" name="SlimRoms/android_external_qrngd" remote="github" revision="mm6.0" />
-
-  <!-- ffmpeg -->
-  <project path="external/ffmpeg" name="SlimRoms/android_external_ffmpeg" remote="github" revision="mm6.0" />
-  <project path="external/stagefright-plugins" name="SlimRoms/android_external_stagefright-plugins" remote="github" revision="mm6.0" />
   <!-- CAF vendors -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="hyper-toolchains/arm-eabi-4.9-google" remote="gh" revision="master" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="xanaxdroid/arm-eabi-5.2.git" remote="bb" revision="sabermod" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="hyper-toolchains/arm-linux-androideabi-4.9-sm" remote="gh" revision="master" groups="pdk,linux,arm" />
-  <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8"/>
   <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices"/>
   <project name="platform/vendor/qcom-opensource/display-frameworks" path="vendor/qcom/opensource/display-frameworks"/>
   <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm"/>
