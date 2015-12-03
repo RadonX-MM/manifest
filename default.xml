@@ -39,7 +39,7 @@
   <project groups="device" name="kernel" path="kernel/" remote="rmm" revision="mm"/>
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="rmm" revision="mm"/>
   <project groups="qcom,default" name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="par" revision="marshmallow_bacon"/>
-  <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="par" revision="marshmallow_bacon"/>
+  <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="rmm" revision="mm"/>
   <project groups="pdk" name="android_hardware_ril" path="hardware/ril" remote="par" revision="marshmallow_bacon"/>
   <project groups="qcom,default" name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="par" revision="marshmallow_msm8974"/>
   <project groups="qcom,default" name="android_hardware_qcom_display" path="hardware/qcom/display" remote="par" revision="marshmallow_msm8974"/>
