@@ -11,7 +11,7 @@
            fetch="git://github.com/" />
   <remote  name="caf"
            fetch="git://codeaurora.org/"
-           revision="LA.BF.1.1.3_rb1.4" />
+           revision="LA.BF.1.1.3_rb1.5" />
   <remote  name="tm"
            fetch="https://github.com/TheMuppets/" />
   <remote  name="rmm"
