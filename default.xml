@@ -330,7 +330,7 @@
   <project path="hardware/ti/omap4xxx" name="SlimRoms/hardware_ti_omap4xxx" remote="github" revision="mm6.0" />
   <project path="hardware/ti/wlan" name="SlimRoms/hardware_ti_wlan" remote="github" revision="mm6.0" />
   <project path="hardware/ti/wpan" name="SlimRoms/hardware_ti_wpan" remote="github" revision="mm6.0" />
-  <project path="kernel/oneplus/msm8974" name="RenderBroken/OPO-CAF-kernel" revision="cm13-r1-t3" >
+  <project path="kernel/oneplus/msm8974" name="RenderBroken/OPO-CAF-kernel" remote="github" revision="cm13-r1-t3" >
      <copyfile src="arch/arm/configs/render_defconfig" dest="kernel/oneplus/msm8974/arch/arm/configs/bacon_defconfig" />
   </project>
   <project path="libcore" name="SlimRoms/android_libcore" remote="github" revision="mm6.0" />
