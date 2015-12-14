@@ -448,6 +448,10 @@
   <project path="vendor/slim" name="SlimRoms/vendor_slim" remote="github" revision="mm6.0" />
   <project path="vendor/oneplus" name="sultanxda/proprietary_vendor_oneplus" remote="github" revision="cm-13.0-caf" />
 
+  <!-- CM SDK -->
+  <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" remote="github" revision="cm-13.0" />
+  <project path="prebuilts/cmsdk" name="CyanogenMod/android_prebuilts_cmsdk" remote="github" revision="master" />
+
   <!-- CAF repos -->
   <project path="vendor/qcom/opensource/display-frameworks" name="SlimRoms/vendor_qcom_opensource_display-frameworks" remote="github" revision="mm6.0" />
   <project path="vendor/qcom/opensource/dpm" name="SlimRoms/vendor_qcom_opensource_dpm" remote="github" revision="mm6.0" />
