@@ -410,5 +410,6 @@
   <project path="system/vold" name="android_system_vold" remote="omnirom" revision="android-6.0" />
   <project path="vendor/rnx" name="vendor_rnx" remote="rmm" revision="mm" />
   <project path="vendor/oppo" name="DonkeyCoyote/proprietary_vendor_oppo" remote="github" revision="android-6.0" />
+  <project path="vendor/sm" name="SaberMod/android-vendor-sabermod.git" remote="gl" revision="master" />
   <project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" revision="android-6.0" />
 </manifest>
