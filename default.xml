@@ -25,7 +25,7 @@
   <remote  name="omnirom"
            review="gerrit.omnirom.org"
            fetch="https://github.com/omnirom" />
-  <default remote="caf"
+  <default remote="aosp"
            sync-j="4" 
            sync-c="true"
            sync--force-sync="true"/>
