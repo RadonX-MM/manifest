@@ -167,7 +167,7 @@
   <project path="external/libutf" name="platform/external/libutf" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/libvncserver" name="platform/external/libvncserver" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/libvorbis" name="platform/external/libvorbis" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/libvpx" name="platform/external/libvpx" groups="pdk" />
+  <project path="external/libvpx" name="platform/external/libvpx" remote="aosp" groups="pdk" />
   <project path="external/libvterm" name="platform/external/libvterm" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/libxml2" name="android_external_libxml2" remote="omnirom" revision="android-6.0" groups="pdk-cw-fs,pdk-fs,libxml2" />
   <project path="external/libyuv" name="platform/external/libyuv" groups="libyuv,pdk-cw-fs,pdk-fs" />
@@ -210,7 +210,7 @@
   <project path="external/owasp/sanitizer" name="platform/external/owasp/sanitizer" groups="pdk-fs" />
   <project path="external/parameter-framework" name="platform/external/parameter-framework" groups="pdk-fs" />
   <project path="external/pcre" name="platform/external/pcre" groups="pdk" />
-  <project path="external/pdfium" name="platform/external/pdfium" groups="pdk" />
+  <project path="external/pdfium" name="platform/external/pdfium" remote="aosp" groups="pdk" />
   <project path="external/ppp" name="platform/external/ppp" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/proguard" name="platform/external/proguard" groups="pdk" />
   <project path="external/protobuf" name="platform/external/protobuf" groups="pdk" />
@@ -242,7 +242,7 @@
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
   <project path="external/toybox" name="platform/external/toybox" groups="pdk" />
-  <project path="external/tremolo" name="platform/external/tremolo" groups="pdk" />
+  <project path="external/tremolo" name="platform/external/tremolo" remote="aosp" groups="pdk" />
   <project path="external/v8" name="platform/external/v8" groups="pdk" />
   <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
   <project path="external/vboot_reference" name="platform/external/vboot_reference" groups="vboot" />
@@ -272,7 +272,7 @@
   <project path="frameworks/opt/chips" name="platform/frameworks/opt/chips" groups="pdk-cw-fs" />
   <project path="frameworks/opt/colorpicker" name="android_frameworks_opt_colorpicker" remote="omnirom" revision="android-6.0" groups="pdk-cw-fs" />
   <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs" remote="aosp" />
   <project path="frameworks/opt/inputconnectioncommon" name="platform/frameworks/opt/inputconnectioncommon" groups="pdk-fs" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" />
