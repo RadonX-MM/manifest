@@ -4,8 +4,8 @@ Elemental Simplicity, Radioactive Power.
 
 What is RadonX?
 ---------------
-RadonX is a CAF ROM for the OnePlus one based on AOSP and the AOSParadox project. The goal is 
-to improve the heavy optimization already introduced by CAF in order to perfect AOSP. Many
+RadonX is a CAF ROM for the OnePlus one based on OmniROM. The goal is 
+to optimize and improve the ROM by merging in CAF and using the standard SaberMod optimizations. Many
 features will also be added, but are second to performance.
 
 Syncing
