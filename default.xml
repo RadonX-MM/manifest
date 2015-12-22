@@ -33,7 +33,7 @@
 <!-- BEGIN RadonX Marshmallow -->
   <project groups="pdk" name="art" path="art" remote="rmm" revision="mm"/>
   <project groups="pdk" name="bionic" path="bionic" remote="rmm" revision="mm"/>
-  <project name="build" path="build" remote="rmm" revision="mm">
+  <project name="build" path="build" remote="rmm" revision="mm-old">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project groups="pdk-cw-fs" name="dalvik" path="dalvik" remote="rmm" revision="mm"/>
