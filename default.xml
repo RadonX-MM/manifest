@@ -74,6 +74,8 @@
 
   <project groups="pdk-cw-fs" name="device/common"/>
   <project groups="pdk" name="device/generic/armv7-a-neon"/>
+  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
+  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
   <project groups="pdk" name="device/sample"/>
   <project name="kernel/lk" path="bootable/bootloader/lk"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp"/>
