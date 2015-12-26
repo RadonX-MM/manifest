@@ -11,7 +11,7 @@
            fetch="git://github.com/" />
   <remote  name="caf"
            fetch="git://codeaurora.org/"
-           revision="LA.BF.1.1.3_rb1.6" />
+           revision="LA.BF.1.1.3_rb1.5" />
   <remote  name="tm"
            fetch="https://github.com/TheMuppets/" />
   <remote  name="rmm"
@@ -33,12 +33,12 @@
 <!-- BEGIN RadonX Marshmallow -->
   <project groups="pdk" name="art" path="art" remote="rmm" revision="mm"/>
   <project groups="pdk" name="bionic" path="bionic" remote="rmm" revision="mm"/>
-  <project name="build" path="build" remote="rmm" revision="mm-old">
+  <project name="build" path="build" remote="rmm" revision="mm">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project groups="pdk-cw-fs" name="dalvik" path="dalvik" remote="rmm" revision="mm"/>
   <project groups="device" name="kernel" path="kernel/" remote="rmm" revision="mm"/>
-  <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="rmm" revision="mm"/>
+  <project name="device_oneplus_bacon" path="device/oneplus/bacon" remote="rmm" revision="mm"/>
   <project path="external/chromium-webview" name="BenzoRom/external_chromium-webview" remote="github" revision="marshmallow" groups="pdk" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="hyper-toolchains/arm-eabi-4.9-google" remote="gh" revision="master" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.3" name="xanaxdroid/arm-eabi-5.3.git" remote="bb" revision="sabermod" groups="pdk,linux,arm" />
@@ -48,7 +48,7 @@
   <project path="manifest" name="manifest" remote="rmm" revision="mm-par"/>
 <!-- END RadonX Marshmallow -->
 <!-- BEGIN AOSParadox 2.1 -->
-  <project path="device/oneplus/bacon" name="h2o64/android_device_oneplus_bacon" remote="github" revision="bacon-par-6.0"/>
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="par" revision="8974-par-6.0"/>
   <project path="vendor/oneplus/" name="sultanxda/proprietary_vendor_oneplus" remote="github" revision="cm-13.0-caf"/>
   <project name="android_device_qcom_common" path="device/qcom/common" remote="par" revision="bacon-par-6.0">
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
