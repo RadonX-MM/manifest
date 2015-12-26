@@ -40,9 +40,11 @@
   <project groups="device" name="kernel" path="kernel/" remote="rmm" revision="mm"/>
   <project name="device_oneplus_bacon" path="device/oneplus/bacon" remote="rmm" revision="mm"/>
   <project path="external/chromium-webview" name="BenzoRom/external_chromium-webview" remote="github" revision="marshmallow" groups="pdk" />
+  <project groups="pdk" name="dragon-tc/android_frameworks_rs" path="frameworks/rs" remote="github" revision="master"/>
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="hyper-toolchains/arm-eabi-4.9-google" remote="gh" revision="master" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.3" name="xanaxdroid/arm-eabi-5.3.git" remote="bb" revision="sabermod" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="hyper-toolchains/arm-linux-androideabi-4.9-sm" remote="gh" revision="master" groups="pdk,linux,arm" />
+  <project groups="pdk" name="dragon-tc/android_prebuilts_ndk" path="prebuilts/ndk" remote="github" revision="master"/>
   <project path="vendor/rnx" name="vendor_rnx" remote="rmm" revision="mm"/>
   <project path="vendor/sm" name="SaberMod/android-vendor-sabermod.git" remote="gl" revision="master" />
   <project path="manifest" name="manifest" remote="rmm" revision="mm-par"/>
@@ -320,7 +322,6 @@
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/widget" path="frameworks/opt/widget"/>
-  <project groups="pdk" name="platform/frameworks/rs" path="frameworks/rs"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/support" path="frameworks/support"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/volley" path="frameworks/volley"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/webview" path="frameworks/webview"/>
@@ -412,7 +413,6 @@
   <project groups="pdk-cw-fs" name="platform/prebuilts/libs/libedit" path="prebuilts/libs/libedit"/>
   <project groups="pdk-cw-fs" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android"/>
   <project groups="pdk" name="platform/prebuilts/misc" path="prebuilts/misc"/>
-  <project groups="pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk"/>
   <project groups="linux,pdk,pdk-cw-fs" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5"/>
   <project groups="pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel"/>
   <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk"/>
