@@ -11,7 +11,7 @@
            fetch="git://github.com/" />
   <remote  name="caf"
            fetch="git://codeaurora.org/"
-           revision="LA.BF.1.1.3_rb1.5" />
+           revision="LA.BF.1.1.3_rb1.6" />
   <remote  name="tm"
            fetch="https://github.com/TheMuppets/" />
   <remote  name="rmm"
@@ -30,59 +30,31 @@
            sync-c="true"
            sync--force-sync="true"/>
            
-<!-- BEGIN RadonX Marshmallow -->
-  <project groups="pdk" name="art" path="art" remote="rmm" revision="mm"/>
-  <project groups="pdk" name="bionic" path="bionic" remote="rmm" revision="mm"/>
-  <project name="build" path="build" remote="rmm" revision="mm">
-    <copyfile dest="Makefile" src="core/root.mk"/>
-  </project>
-  <project groups="pdk-cw-fs" name="dalvik" path="dalvik" remote="rmm" revision="mm"/>
-  <project groups="device" name="kernel" path="kernel/" remote="rmm" revision="mm"/>
-  <project name="device_oneplus_bacon" path="device/oneplus/bacon" remote="rmm" revision="mm"/>
-  <project path="external/chromium-webview" name="BenzoRom/external_chromium-webview" remote="github" revision="marshmallow" groups="pdk" />
-  <project groups="pdk" name="dragon-tc/android_frameworks_rs" path="frameworks/rs" remote="github" revision="master"/>
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="hyper-toolchains/arm-eabi-4.9-google" remote="gh" revision="master" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.3" name="xanaxdroid/arm-eabi-5.3.git" remote="bb" revision="sabermod" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="hyper-toolchains/arm-linux-androideabi-4.9-sm" remote="gh" revision="master" groups="pdk,linux,arm" />
-  <project groups="pdk" name="dragon-tc/android_prebuilts_ndk" path="prebuilts/ndk" remote="github" revision="master"/>
-  <project path="vendor/rnx" name="vendor_rnx" remote="rmm" revision="mm"/>
-  <project path="vendor/sm" name="SaberMod/android-vendor-sabermod.git" remote="gl" revision="master" />
-  <project path="manifest" name="manifest" remote="rmm" revision="mm-par"/>
-<!-- END RadonX Marshmallow -->
-<!-- BEGIN AOSParadox 2.1 -->
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="par" revision="8974-par-6.0"/>
-  <project path="vendor/oneplus/" name="sultanxda/proprietary_vendor_oneplus" remote="github" revision="cm-13.0-caf"/>
-  <project name="android_device_qcom_common" path="device/qcom/common" remote="par" revision="bacon-par-6.0">
-    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-  </project>
-  <project name="android_device_qcom_msm8974" path="device/qcom/msm8974" remote="par" revision="bacon-par-6.0"/>
-  <project name="android_external_boringssl" path="external/boringssl" remote="par" revision="8974-par-6.0"/>
-  <project name="android_external_sepolicy" path="external/sepolicy" remote="par" revision="8974-par-6.0"/>
-  <project name="android_external_libnfc-nci" path="external/libnfc-nci" remote="par" revision="bacon-par-6.0" />
-  <project name="android_frameworks_av" path="frameworks/av" remote="par" revision="bacon-par-6.0"/>
-  <project name="android_frameworks_base" path="frameworks/base" remote="par" revision="bacon-par-6.0" groups="pdk-cw-fs" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="par" revision="8974-par-6.0"/>
-  <project name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="par" revision="8974-par-6.0"/>
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="par" revision="8974-par-6.0"/>
-  <project name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="par" revision="bacon-par-6.0"/>
-  <project name="android_hardware_ril" path="hardware/ril" remote="par" revision="bacon-par-6.0"/>
-  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="par" revision="bacon-par-6.0" />
-  <project name="android_system_core" path="system/core" remote="par" revision="8974-par-6.0" />
-  <project path="external/stlport" name="CyanogenMod/android_external_stlport" remote="github" revision="cm-13.0" />
-  <project path="external/connectivity" name="CyanogenMod/android_external_connectivity" remote="github" revision="cm-13.0" />
-  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" />
-  <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" remote="github" revision="cm-13.0" />
-<!-- END AOSParadox 2.1 -->
-
   <project groups="pdk-cw-fs" name="device/common"/>
+  <project groups="pdk" name="device/generic/arm64"/>
   <project groups="pdk" name="device/generic/armv7-a-neon"/>
-  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
-  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
+  <project groups="pdk" name="device/generic/common"/>
+  <project groups="pdk" name="device/generic/goldfish"/>
+  <project groups="pdk" name="device/generic/mini-emulator-arm64"/>
+  <project groups="pdk" name="device/generic/mini-emulator-armv7-a-neon"/>
+  <project groups="pdk" name="device/generic/mini-emulator-mips"/>
+  <project groups="pdk" name="device/generic/mini-emulator-x86"/>
+  <project groups="pdk" name="device/generic/mips"/>
+  <project name="device/generic/qemu"/>
+  <project groups="pdk" name="device/generic/x86"/>
+  <project groups="pdk" name="device/generic/x86_64"/>
+  <project groups="device" name="device/google/accessory/arduino"/>
+  <project groups="pdk" name="device/google/accessory/demokit"/>
   <project groups="pdk" name="device/sample"/>
   <project name="kernel/lk" path="bootable/bootloader/lk"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp"/>
+  <project groups="pdk" name="platform/art" path="art"/>
+  <project groups="pdk" name="platform/bionic" path="bionic"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery"/>
   <project groups="cts,pdk-cw-fs" name="platform/cts" path="cts"/>
+  <project groups="pdk-cw-fs" name="platform/dalvik" path="dalvik"/>
+  <project name="platform/developers/build" path="developers/build"/>
+  <project name="platform/developers/demos" path="developers/demos"/>
   <project groups="pdk-cw-fs" name="platform/development" path="development"/>
   <project groups="pdk" name="platform/external/aac" path="external/aac"/>
   <project groups="pdk-cw-fs" name="platform/external/android-clat" path="external/android-clat"/>
@@ -177,7 +149,7 @@
   <project groups="pdk-cw-fs" name="platform/external/junit" path="external/junit"/>
   <project groups="pdk-cw-fs" name="platform/external/kernel-headers" path="external/kernel-headers"/>
   <project groups="pdk-cw-fs" name="platform/external/ksoap2" path="external/ksoap2"/>
-  <project groups="pdk" name="platform/external/libavc" path="external/libavc"/>
+  <project name="CyanogenMod/android_external_libavc" path="external/libavc" remote="github" revision="cm-13.0" />
   <project groups="pdk-cw-fs" name="platform/external/libcap-ng" path="external/libcap-ng"/>
   <project groups="pdk" name="platform/external/libcxx" path="external/libcxx"/>
   <project groups="pdk" name="platform/external/libcxxabi" path="external/libcxxabi"/>
@@ -189,6 +161,7 @@
   <project groups="pdk" name="platform/external/liblzf" path="external/liblzf"/>
   <project groups="pdk" name="platform/external/libmpeg2" path="external/libmpeg2"/>
   <project groups="pdk-cw-fs" name="platform/external/libmtp" path="external/libmtp"/>
+  <project name="darkobas/android_external_libnfc-nci" path="external/libnfc-nci" remote="github" revision="M-caf" />
   <project groups="pdk" name="platform/external/libnfc-nxp" path="external/libnfc-nxp"/>
   <project groups="pdk" name="platform/external/libnl" path="external/libnl"/>
   <project groups="pdk" name="platform/external/libogg" path="external/libogg"/>
@@ -286,7 +259,6 @@
   <project groups="pdk" name="platform/external/vogar" path="external/vogar"/>
   <project groups="pdk,qcom_msm8x26" name="platform/external/webp" path="external/webp"/>
   <project groups="pdk" name="platform/external/webrtc" path="external/webrtc"/>
-  <project groups="pdk" name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8"/>
   <project groups="pdk-cw-fs" name="platform/external/xmlwriter" path="external/xmlwriter"/>
   <project groups="pdk-cw-fs" name="platform/external/xmp_toolkit" path="external/xmp_toolkit"/>
   <project groups="pdk" name="platform/external/zlib" path="external/zlib"/>
@@ -301,7 +273,7 @@
   <project groups="pdk-cw-fs" name="platform/frameworks/minikin" path="frameworks/minikin"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/ml" path="frameworks/ml"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/multidex" path="frameworks/multidex"/>
-  <project groups="pdk" name="platform/frameworks/native" path="frameworks/native"/>
+  <project name="darkobas/android_frameworks_native" path="frameworks/native" remote="github" revision="M-caf" />
   <project name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/bluetooth" path="frameworks/opt/bluetooth"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar"/>
@@ -313,65 +285,55 @@
   <project name="platform/frameworks/opt/inputconnectioncommon" path="frameworks/opt/inputconnectioncommon"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/inputmethodcommon" path="frameworks/opt/inputmethodcommon"/>
   <project name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet"/>
-  <project groups="frameworks_ims,pdk-cw-fs" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip"/>
-  <project groups="pdk" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi"/>
+  <project name="darkobas/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="M-caf" />
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard"/>
-  <project groups="pdk" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony"/>
+  <project name="darkobas/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" revision="M-caf" />
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/widget" path="frameworks/opt/widget"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/support" path="frameworks/support"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/volley" path="frameworks/volley"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/webview" path="frameworks/webview"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm"/>
   <project groups="pdk" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt"/>
-  <project groups="pdk" name="platform/hardware/libhardware" path="hardware/libhardware"/>
+  <project groups="pdk" name="darkobas/android_hardware_libhardware" path="hardware/libhardware" remote="github" revision="M-caf" /> 
   <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy"/>
-  <project groups="qcom" name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster"/>
+  <project name="darkobas/android_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="github" revision="M-caf" />
   <project groups="qcom,default" name="platform/hardware/qcom/media" path="hardware/qcom/media"/>
   <project groups="qcom,default" name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors"/>
   <project groups="pdk" name="platform/libcore" path="libcore"/>
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper"/>
   <project groups="pdk" name="platform/ndk" path="ndk"/>
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver"/>
-  <project groups="pdk-cw-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth"/>
-  <project name="platform/packages/apps/Browser" path="packages/apps/Browser"/>
   <project name="platform/packages/apps/Calculator" path="packages/apps/Calculator"/>
   <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar"/>
+  <project name="platform/packages/apps/Camera" path="packages/apps/Camera"/>
   <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig"/>
   <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver"/>
   <project groups="pdk-cw-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller"/>
-  <project name="platform/packages/apps/Contacts" path="packages/apps/Contacts"/>
-  <project name="platform/packages/apps/ContactsCommon" path="packages/apps/ContactsCommon"/>
-  <project name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock"/>
-  <project name="platform/packages/apps/Dialer" path="packages/apps/Dialer"/>
+  <project name="darkobas/android_packages_apps_Contacts" path="packages/apps/Contacts" remote="github" revision="M-caf" />
+  <project name="darkobas/android_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" remote="github" revision="M-caf" />
+  <project name="omnirom/android_packages_apps_DeskClock" path="packages/apps/DeskClock" remote="github" revision="android-6.0"/>
   <project name="platform/packages/apps/Email" path="packages/apps/Email"/>
   <project name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator"/>
   <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange"/>
   <project name="platform/packages/apps/FMRadio" path="packages/apps/FMRadio"/>
+  <project name="platform/packages/apps/Gallery" path="packages/apps/Gallery"/>
   <project name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2"/>
   <project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer"/>
-  <project name="platform/packages/apps/InCallUI" path="packages/apps/InCallUI"/>
   <project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain"/>
-  <project name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2"/>
   <project name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera"/>
   <project name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning"/>
   <project name="platform/packages/apps/Messaging" path="packages/apps/Messaging"/>
-  <project name="platform/packages/apps/Mms" path="packages/apps/Mms"/>
-  <project name="platform/packages/apps/Music" path="packages/apps/Music"/>
-  <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX"/>
   <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc"/>
   <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer"/>
-  <project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller"/>
   <project name="platform/packages/apps/Phone" path="packages/apps/Phone"/>
-  <project name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon"/>
+  <project name="darkobas/android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="github" revision="M-caf"/>
   <project name="platform/packages/apps/Protips" path="packages/apps/Protips"/>
   <project name="platform/packages/apps/Provision" path="packages/apps/Provision"/>
   <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox"/>
   <project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService"/>
-  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera"/>
   <project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder"/>
   <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts"/>
   <project name="platform/packages/apps/SpeechRecorder" path="packages/apps/SpeechRecorder"/>
@@ -389,22 +351,25 @@
   <project name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider"/>
   <project groups="pdk-cw-fs" name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider"/>
   <project groups="pdk-cw-fs" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider"/>
-  <project groups="pdk-cw-fs" name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider"/>
   <project name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider"/>
-  <project name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider"/>
+  <project name="darkobas/android_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="github" revision="M-caf" />
   <project name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider"/>
   <project groups="pdk-cw-fs" name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider"/>
   <project name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic"/>
   <project name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable"/>
   <project name="platform/packages/screensavers/WebView" path="packages/screensavers/WebView"/>
   <project name="platform/packages/services/Mms" path="packages/services/Mms"/>
-  <project name="platform/packages/services/Telecomm" path="packages/services/Telecomm"/>
-  <project name="platform/packages/services/Telephony" path="packages/services/Telephony"/>
+  <project name="platform/packages/apps/Mms" path="packages/app/Mms"/>
+  <project name="darkobas/android_packages_services_Telecomm" path="packages/services/Telecomm" remote="github" revision="M-caf" />
+  <project name="darkobas/android_packages_services_Telephony" path="packages/services/Telephony" remote="github" revision="M-caf" />
   <project name="platform/packages/wallpapers/Basic" path="packages/wallpapers/Basic"/>
+  <project name="platform/packages/wallpapers/Galaxy4" path="packages/wallpapers/Galaxy4"/>
+  <project name="platform/packages/wallpapers/HoloSpiral" path="packages/wallpapers/HoloSpiral"/>
   <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker"/>
+  <project name="platform/packages/wallpapers/MagicSmoke" path="packages/wallpapers/MagicSmoke"/>
+  <project name="platform/packages/wallpapers/NoiseField" path="packages/wallpapers/NoiseField"/>
+  <project name="platform/packages/wallpapers/PhaseBeam" path="packages/wallpapers/PhaseBeam"/>
   <project groups="pdk" name="platform/pdk" path="pdk"/>
-  <project name="platform/platform_testing" path="platform_testing"/>
-  <project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator"/>
   <project groups="pdk,linux" name="platform/prebuilts/clang/linux-x86/host/3.6" path="prebuilts/clang/linux-x86/host/3.6"/>
   <project name="platform/prebuilts/devtools" path="prebuilts/devtools"/>
   <project groups="pdk" name="platform/prebuilts/eclipse" path="prebuilts/eclipse"/>
@@ -419,23 +384,103 @@
   <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools"/>
   <project groups="pdk-cw-fs" name="platform/sdk" path="sdk"/>
   <project groups="pdk" name="platform/system/bt" path="system/bt"/>
-  <project groups="pdk" name="platform/system/extras" path="system/extras"/>
   <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper"/>
   <project groups="pdk" name="platform/system/keymaster" path="system/keymaster"/>
-  <project groups="pdk" name="platform/system/media" path="system/media"/>
   <project groups="pdk" name="platform/system/netd" path="system/netd"/>
-  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap"/>
   <project groups="pdk" name="platform/system/security" path="system/security"/>
-  <project groups="pdk" name="platform/system/vold" path="system/vold"/>
-  <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/bluetooth"/>
+  <project name="darkobas/android_system_vold" path="system/vold" remote="github" revision="M-caf" />
   <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices"/>
   <project name="platform/vendor/qcom-opensource/display-frameworks" path="vendor/qcom/opensource/display-frameworks"/>
   <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm"/>
   <project name="platform/vendor/qcom-opensource/fm" path="vendor/qcom/opensource/fm"/>
   <project name="platform/vendor/qcom-opensource/kernel/kernel-tests" path="vendor/qcom/opensource/kernel-tests"/>
-  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location"/>
+<!--  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location"/> -->
   <project name="platform/vendor/qcom-opensource/stm-log" path="vendor/qcom/opensource/stm-log"/>
   <project name="platform/vendor/qcom-opensource/testframework" path="vendor/qcom/opensource/testframework"/>
   <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services"/>
-  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima"/>
+
+<!-- AOSParadox Stuff -->
+<!-- Bacon -->
+
+  <project name="darkobas/android_device_qcom_msm8974" path="device/qcom/msm8974" remote="github" revision="M-caf"/>
+  <project name="darkobas/android_device_qcom_common" path="device/qcom/common" remote="github" revision="M-caf">
+    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+
+  <project groups="pdk" path="frameworks/av" name="darkobas/android_frameworks_av" remote="github" revision="M-caf"/>
+
+  <project groups="device" name="device_oneplus_bacon" path="device/oneplus/bacon" remote="rmm" revision="mm"/>
+  <project groups="device" name="darkobas/android_kernel_oneplus_msm8974" path="kernel" remote="github" revision="M-caf-sultan"/>
+  <project groups="device" name="darkobas/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="M-caf"/>
+
+  <project name="darkobas/android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="github" revision="M-caf"/>
+  <project groups="qcom,default" name="darkobas/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="github" revision="M-caf"/>
+  <project name="darkobas/android_hardware_ril" path="hardware/ril" remote="github" revision="M-caf"/>
+
+  <project path="manifest" name="darkobas/manifest" remote="github" revision="M-caf"/>
+
+<!-- CyanogenMod Bacon Dependencies (we can't pass them) -->
+
+  <project name="CyanogenMod/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="cm-13.0"/>
+
+<!-- QCOM MSM8974 -->
+
+  <project path="build" name="build" remote="rmm" revision="mm" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <project name="darkobas/android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" revision="M-caf"/>
+  <project path="system/core" name="darkobas/android_system_core" remote="github" revision="M-caf" />
+
+  <project path="frameworks/base" name="darkobas/frameworks_base" remote="github" revision="M-caf" />
+  <project name="darkobas/android_frameworks_support" path="frameworks/support" remote="github" revision="M-caf" />
+
+  <project name="darkobas/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="github" revision="M-caf" />
+  <project name="platform/packages/apps/Camera2" path="packages/apps/Camera2" />
+  <project name="darkobas/android_packages_apps_Dialer" path="packages/apps/Dialer" remote="github" revision="M-caf" />
+  <project name="darkobas/android_packages_apps_Packageinstaller" path="packages/apps/PackageInstaller" remote="github" revision="M-caf" />
+  <project path="packages/apps/Settings" name="darkobas/android_packages_apps_Settings" remote="github" revision="M-caf" />
+
+  <project path="system/qcom" name="darkobas/android_system_qcom" remote="github" revision="M-caf" />
+
+
+  <project name="darkobas/android_hardware_qcom_bt" path="hardware/qcom/bt" remote="github" revision="M-caf"/>
+  <project name="darkobas/android_hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="M-caf"/>
+
+  <project name="darkobas/android_external_boringssl" path="external/boringssl" remote="github" revision="M-caf"/>
+
+  <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom-opensource/bluetooth" />
+
+<!-- Busybox -->
+
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" />
+
+<!-- AOSParadox Vendor -->
+
+  <project path="vendor/rnx" name="vendor_rnx" remote="rmm" revision="mm" />
+  <project path="external/chromium-webview" name="BenzoRom/external_chromium-webview" remote="github" revision="marshmallow" groups="pdk" />
+  <project groups="pdk" name="dragon-tc/android_frameworks_rs" path="frameworks/rs" remote="github" revision="master"/>
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="hyper-toolchains/arm-eabi-4.9-google" remote="gh" revision="master" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.3" name="xanaxdroid/arm-eabi-5.3.git" remote="bb" revision="sabermod" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="hyper-toolchains/arm-linux-androideabi-4.9-sm" remote="gh" revision="master" groups="pdk,linux,arm" />
+  <project groups="pdk" name="dragon-tc/android_prebuilts_ndk" path="prebuilts/ndk" remote="github" revision="master"/>
+  <project path="vendor/sm" name="SaberMod/android-vendor-sabermod.git" remote="gl" revision="master" />
+
+<!-- END AOSParadox Stuff -->
+  <project path="external/android-visualizer" name="CyanogenMod/android_external_android-visualizer" remote="github" revision="cm-13.0" />
+  <project path="external/sepolicy" name="darkobas/android_external_sepolicy" remote="github" revision="M-caf" />
+  <project path="packages/apps/AudioFX" name="CyanogenMod/android_packages_apps_AudioFX" remote="github" revision="cm-13.0" />
+  <project path="packages/apps/Apollo" name="Omnirom/android_packages_apps_Apollo" remote="github" revision="android-6.0" />
+  <project path="packages/apps/Launcher3" name="Omnirom/android_packages_apps_Launcher3" remote="github" revision="android-6.0" />
+  <project name="sultanxda/android_packages_apps_SnapdragonCamera" path="packages/apps/SnapdragonCamera" remote="github" revision="cm-13.0-caf" />
+  <project name="darkobas/android_packages_providers_MediaProvider" path="packages/providers/Mediaprovider" remote="github" revision="M-caf" />
+  <project name="darkobas/android_system_media" path="system/media" remote="github" revision="M-caf"/>
+  <project name="darkobas/android_system_extras" path="system/extras" remote="github" revision="M-caf"/>
+  <project path="packages/apps/InCallUI" name="darkobas/android_packages_apps_InCallUI" remote="github" revision="M-caf" />
+  <project path="packages/apps/OpenDelta" name="darkobas/android_packages_apps_OpenDelta" remote="github" revision="M-caf" />
+  <project path="frameworks/opt/net/ims" name="darkobas/android_frameworks_opt_net_ims" remote="github" revision="M-caf" />
+  <project name="CyanogenMod/android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="github" revision="cm-13.0" />
+  <project name="CyanogenMod/android_external_ntfs-3g" path="external/ntfs-3g" remote="github" revision="cm-13.0" />
+  <project name="CyanogenMod/android_external_google" path="external/google" remote="github" revision="cm-13.0" />
+  <project name="dirtyunicorns/android_packages_apps_LockClock" path="packages/apps/LockClock" remote="github" revision="m" />
 </manifest>
