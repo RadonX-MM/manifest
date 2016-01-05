@@ -43,7 +43,7 @@
   <project path="vendor/rnx" name="vendor_rnx" remote="rmm" revision="mm"/>
   <project path="vendor/sm" name="SaberMod/android-vendor-sabermod.git" remote="gl" revision="master" />
   <project path="manifest" name="manifest" remote="rmm" revision="mm-par"/>
-  <project path="vendor/oneplus/" name="xboxfanj/vendor_oneplus" remote="gh" revision="cm-13.0-caf"/>
+  <project path="vendor/oneplus/" name="xboxfanj/vendor_oneplus" remote="gh" revision="marshmallow-caf"/>
   <project name="android_device_qcom_common" path="device/qcom/common" remote="par" revision="bacon-par-6.0">
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
