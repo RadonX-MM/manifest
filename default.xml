@@ -33,7 +33,7 @@
   </project>
   <project groups="pdk-cw-fs" name="dalvik" path="dalvik" remote="rmm" revision="mm"/>
   <project groups="device" name="kernel" path="kernel/" remote="rmm" revision="mm"/>
-  <project name="xboxfanj/device_oneplus_bacon" path="device/oneplus/bacon" remote="gh" revision="marshmallow-caf"/>
+  <project name="device_oneplus_bacon" path="device/oneplus/bacon" remote="rmm" revision="mm"/>
   <project path="external/chromium-webview" name="BenzoRom/external_chromium-webview" remote="gh" revision="marshmallow" groups="pdk" />
   <project groups="pdk" name="dragon-tc/android_frameworks_rs" path="frameworks/rs" remote="gh" revision="master"/>
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="hyper-toolchains/arm-eabi-4.9-google" remote="gh" revision="master" groups="pdk,linux,arm" />
