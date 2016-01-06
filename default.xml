@@ -317,7 +317,6 @@
   <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy"/>
   <project groups="qcom,default" name="platform/hardware/qcom/audio" path="hardware/qcom/audio"/>
   <project groups="qcom,default" name="platform/hardware/qcom/bt" path="hardware/qcom/bt"/>
-  <project groups="qcom,default" name="platform/hardware/qcom/camera" path="hardware/qcom/camera"/>
   <project groups="qcom,default" name="platform/hardware/qcom/display" path="hardware/qcom/display"/>
   <project groups="qcom,default" name="platform/hardware/qcom/gps" path="hardware/qcom/gps"/>
   <project groups="qcom" name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster"/>
