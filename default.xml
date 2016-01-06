@@ -1,64 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-  <remote  name="par"
-           fetch="git://github.com/aosparadox/"
-           revision="marshmallow_legacy" />
-  <remote  name="aosp"
-           fetch="https://android.googlesource.com"
-           revision="refs/tags/android-6.0.1_r3" />
-  <remote  name="github"
-           fetch="git://github.com/" />
-  <remote  name="caf"
-           fetch="git://codeaurora.org/"
-           revision="LA.BF.1.1.3_rb1.6" />
-  <remote  name="rmm"
-           fetch="https://github.com/RadonX-MM/" />
-  <remote  name="gh"
-           fetch="https://github.com/" />
-  <remote  name="bb"
-           fetch="https://bitbucket.org/" />
-  <remote  name="gl"
-           fetch="https://gitlab.com/" />
-  <default remote="caf"
-           sync-j="4" 
-           sync-c="true"
-           sync--force-sync="true"/>
+  <remote  name="par" fetch="git://github.com/aosparadox/" revision="8974-par-6.0" />
+  <remote  name="aosp" fetch="https://android.googlesource.com" revision="refs/tags/android-6.0.1_r10" />
+  <remote  name="caf" fetch="git://codeaurora.org/" revision="LA.BF.1.1.3_rb1.6" />
+  <remote  name="rmm" fetch="https://github.com/RadonX-MM/" revision="mm" />
+  <remote  name="gh" fetch="https://github.com/" />
+  <remote  name="bb" fetch="https://bitbucket.org/" revision="sabermod" />
+  <remote  name="gl" fetch="https://gitlab.com/" />
+  <default remote="caf" sync-j="4"  sync-c="true" sync--force-sync="true" />
            
-<!-- BEGIN RadonX Marshmallow -->
-  <project groups="pdk" name="art" path="art" remote="rmm" revision="mm"/>
-  <project groups="pdk" name="bionic" path="bionic" remote="rmm" revision="mm"/>
-  <project name="build" path="build" remote="rmm" revision="mm">
+<!-- RadonX Marshmallow -->
+  <project groups="pdk" name="art" path="art" remote="rmm"/>
+  <project groups="pdk" name="bionic" path="bionic" remote="rmm"/>
+  <project name="build" path="build" remote="rmm">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
-  <project groups="pdk-cw-fs" name="dalvik" path="dalvik" remote="rmm" revision="mm"/>
-  <project groups="device" name="kernel" path="kernel/" remote="rmm" revision="mm"/>
-  <project name="device_oneplus_bacon" path="device/oneplus/bacon" remote="rmm" revision="mm"/>
+  <project groups="pdk-cw-fs" name="dalvik" path="dalvik" remote="rmm"/>
+  <project groups="device" name="kernel" path="kernel/" remote="rmm"/>
+  <project name="device_oneplus_bacon" path="device/oneplus/bacon" remote="rmm"/>
   <project path="external/chromium-webview" name="BenzoRom/external_chromium-webview" remote="gh" revision="marshmallow" groups="pdk" />
   <project groups="pdk" name="dragon-tc/android_frameworks_rs" path="frameworks/rs" remote="gh" revision="master"/>
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="hyper-toolchains/arm-eabi-4.9-google" remote="gh" revision="master" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.3" name="xanaxdroid/arm-eabi-5.3.git" remote="bb" revision="sabermod" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.3" name="xanaxdroid/arm-eabi-5.3.git" remote="bb" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="hyper-toolchains/arm-linux-androideabi-4.9-sm" remote="gh" revision="master" groups="pdk,linux,arm" />
   <project groups="pdk" name="dragon-tc/android_prebuilts_ndk" path="prebuilts/ndk" remote="gh" revision="master"/>
-  <project path="vendor/rnx" name="vendor_rnx" remote="rmm" revision="mm"/>
+  <project path="vendor/rnx" name="vendor_rnx" remote="rmm"/>
   <project path="vendor/sm" name="SaberMod/android-vendor-sabermod.git" remote="gl" revision="master" />
   <project path="manifest" name="manifest" remote="rmm" revision="mm-par"/>
   <project path="vendor/oneplus/" name="xboxfanj/vendor_oneplus" remote="gh" revision="marshmallow-caf"/>
   <project name="android_device_qcom_common" path="device/qcom/common" remote="par" revision="bacon-par-6.0">
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
-  <project name="frameworks_base" path="frameworks/base" remote="rmm" revision="mm"/>
-  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="rmm" revision="mm"/>
-
+  <project name="frameworks_base" path="frameworks/base" remote="rmm"/>
+  <project name="frameworks_native" path="frameworks/native" remote="rmm"/>
+  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="rmm"/>
+<!-- End RadonX Marshmallow -->
+<!-- AOSParadox -->
   <project name="android_frameworks_av" path="frameworks/av" remote="par" revision="bacon-par-6.0"/>
+  <project name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="par" revision="8974-par-6.0" />  
   <project name="android_system_core" path="system/core" remote="par" revision="8974-par-6.0" />
   <project name="android_external_boringssl" path="external/boringssl" remote="par" revision="8974-par-6.0"/>
   <project name="android_external_libnfc-nci" path="external/libnfc-nci" remote="par" revision="bacon-par-6.0" />
-  <project path="external/stlport" name="CyanogenMod/android_external_stlport" remote="github" revision="cm-13.0" />
-  <project path="external/connectivity" name="CyanogenMod/android_external_connectivity" remote="github" revision="cm-13.0" />
-  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" />
-  <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" remote="github" revision="cm-13.0" />
-<!-- END AOSParadox 2.1 -->
+  <project path="external/stlport" name="CyanogenMod/android_external_stlport" remote="gh" revision="cm-13.0" />
+  <project path="external/connectivity" name="CyanogenMod/android_external_connectivity" remote="gh" revision="cm-13.0" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="gh" revision="cm-13.0" />
+  <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" remote="gh" revision="cm-13.0" />
+<!-- END AOSParadox -->
 
   <project groups="pdk-cw-fs" name="device/common"/>
   <project groups="pdk" name="device/generic/armv7-a-neon"/>
