@@ -37,9 +37,9 @@
 <!-- End RadonX Marshmallow -->
 <!-- AOSParadox -->
   <project name="android_frameworks_av" path="frameworks/av" remote="par" revision="bacon-par-6.0"/>
-  <project name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="par" revision="8974-par-6.0" />  
-  <project name="android_system_core" path="system/core" remote="par" revision="8974-par-6.0" />
-  <project name="android_external_boringssl" path="external/boringssl" remote="par" revision="8974-par-6.0"/>
+  <project name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="par"/>  
+  <project name="android_system_core" path="system/core" remote="par"/>
+  <project name="android_external_boringssl" path="external/boringssl" remote="par"/>
   <project name="android_external_libnfc-nci" path="external/libnfc-nci" remote="par" revision="bacon-par-6.0" />
   <project path="external/stlport" name="CyanogenMod/android_external_stlport" remote="gh" revision="cm-13.0" />
   <project path="external/connectivity" name="CyanogenMod/android_external_connectivity" remote="gh" revision="cm-13.0" />
