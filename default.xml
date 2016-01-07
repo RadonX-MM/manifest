@@ -26,6 +26,7 @@
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="gh" revision="cm-13.0" />
   <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" remote="gh" revision="cm-13.0" />
   <project path="external/chromium-webview" name="BenzoRom/external_chromium-webview" remote="gh" revision="marshmallow" groups="pdk" />
+  <project name="external_libnfc-nci" path="external/libnfc-nci" remote="rmm"/>
   <project name="frameworks_av" path="frameworks/av" remote="rmm"/>
   <project name="frameworks_base" path="frameworks/base" remote="rmm"/>
   <project name="frameworks_native" path="frameworks/native" remote="rmm"/>
@@ -44,7 +45,6 @@
 <!-- AOSParadox -->
   <project name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="par"/>  
   <project name="android_external_boringssl" path="external/boringssl" remote="par"/>
-  <project name="android_external_libnfc-nci" path="external/libnfc-nci" remote="par" revision="bacon-par-6.0" />
 <!-- END AOSParadox -->
 
   <project groups="pdk-cw-fs" name="device/common"/>
