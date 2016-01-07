@@ -33,7 +33,7 @@
   <project path="vendor/sm" name="SaberMod/android-vendor-sabermod.git" remote="gl" revision="master" />
   <project path="manifest" name="manifest" remote="rmm" revision="mm-par"/>
   <project path="vendor/oneplus/" name="xboxfanj/vendor_oneplus" remote="gh" revision="marshmallow-caf"/>
-  <project name="device_qcom_common" path="device/qcom/common" remote="rm">
+  <project name="device_qcom_common" path="device/qcom/common" remote="rmm">
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
   <project name="frameworks_av" path="frameworks/av" remote="rmm"/>
