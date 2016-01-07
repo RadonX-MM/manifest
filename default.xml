@@ -27,6 +27,7 @@
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="gh" revision="cm-13.0" />
   <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" remote="gh" revision="cm-13.0" />
   <project path="external/chromium-webview" name="BenzoRom/external_chromium-webview" remote="gh" revision="marshmallow" groups="pdk" />
+  <project groups="pdk" name="darkobas/external_sepolicy" path="external/sepolicy" remote="gh" revision="M-caf"/>
   <project name="external_libnfc-nci" path="external/libnfc-nci" remote="rmm"/>
   <project name="frameworks_av" path="frameworks/av" remote="rmm"/>
   <project name="frameworks_base" path="frameworks/base" remote="rmm"/>
@@ -230,7 +231,6 @@
   <project groups="pdk" name="platform/external/safe-iop" path="external/safe-iop"/>
   <project groups="pdk" name="platform/external/scrypt" path="external/scrypt"/>
   <project name="platform/external/selinux" path="external/selinux"/>
-  <project groups="pdk" name="platform/external/sepolicy" path="external/sepolicy"/>
   <project groups="pdk,qcom_msm8x26" name="platform/external/sfntly" path="external/sfntly"/>
   <project groups="pdk,qcom_msm8x26" name="platform/external/skia" path="external/skia"/>
   <project name="platform/external/slf4j" path="external/slf4j"/>
