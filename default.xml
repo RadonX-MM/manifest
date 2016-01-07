@@ -21,6 +21,7 @@
   <project name="device_qcom_common" path="device/qcom/common" remote="rmm">
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="rmm"/>
   <project path="external/stlport" name="CyanogenMod/android_external_stlport" remote="gh" revision="cm-13.0" />
   <project path="external/connectivity" name="CyanogenMod/android_external_connectivity" remote="gh" revision="cm-13.0" />
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="gh" revision="cm-13.0" />
@@ -50,7 +51,6 @@
   <project groups="pdk-cw-fs" name="device/common"/>
   <project groups="pdk" name="device/generic/armv7-a-neon"/>
   <project groups="pdk" name="device/generic/common"/>
-  <project name="device/qcom/sepolicy"/>
   <project name="kernel/lk" path="bootable/bootloader/lk"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery"/>
