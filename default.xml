@@ -27,7 +27,7 @@
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="gh" revision="cm-13.0" />
   <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" remote="gh" revision="cm-13.0" />
   <project path="external/chromium-webview" name="BenzoRom/external_chromium-webview" remote="gh" revision="marshmallow" groups="pdk" />
-  <project groups="pdk" name="darkobas/external_sepolicy" path="external/sepolicy" remote="gh" revision="M-caf"/>
+  <project groups="pdk" name="darkobas/android_external_sepolicy" path="external/sepolicy" remote="gh" revision="M-caf"/>
   <project name="Evervolv/android_external_libncurses" path="external/libncurses" remote="gh" revision="mm-6.0"/>
   <project name="external_libnfc-nci" path="external/libnfc-nci" remote="rmm"/>
   <project name="frameworks_av" path="frameworks/av" remote="rmm"/>
