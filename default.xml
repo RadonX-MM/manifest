@@ -2,7 +2,7 @@
 <manifest>
   <remote  name="par" fetch="git://github.com/aosparadox/" revision="8974-par-6.0" />
   <remote  name="aosp" fetch="https://android.googlesource.com" revision="refs/tags/android-6.0.1_r10" />
-  <remote  name="caf" fetch="git://codeaurora.org/" revision="LA.BF.1.1.3_rb1.7" />
+  <remote  name="caf" fetch="git://codeaurora.org/" revision="LA.BF.1.1.3_rb1.8" />
   <remote  name="rmm" fetch="https://github.com/RadonX-MM/" revision="mm" />
   <remote  name="gh" fetch="https://github.com/" />
   <remote  name="bb" fetch="https://bitbucket.org/" revision="sabermod" />
