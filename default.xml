@@ -287,7 +287,6 @@
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs" />
   <project path="frameworks/webview" name="android_frameworks_webview" remote="omnirom" revision="android-6.0" groups="pdk-cw-fs" />
   <project path="frameworks/wilhelm" name="android_frameworks_wilhelm" remote="omnirom" revision="android-6.0" />
-  <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="omnirom" revision="android-6.0" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="omnirom" revision="android-6.0" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="android_hardware_invensense" remote="omnirom" revision="android-6.0" groups="invensense" />
@@ -303,8 +302,6 @@
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="omnirom" revision="android-6.0" groups="qcom_wlan" />
   <project path="hardware/ril" name="android_hardware_ril" remote="omnirom" revision="android-6.0" groups="pdk" />
-  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
-  <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="libcore" name="android_libcore" remote="omnirom" revision="android-6.0" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
